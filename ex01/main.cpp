@@ -6,7 +6,7 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 11:44:45 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/09 15:14:23 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/09 15:34:51 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 int main()
 {
-	randomChump("Marco");
-	Zombie *zombie = newZombie("Simone");
-	zombie->announce();
-	delete zombie;
+	int n = 10;
+	Zombie *zombie = zombieHorde(n,"Simone");
+	for (int i = 0; i < n; i++)
+		zombie[i].announce();
+	delete[] zombie;
 	return (0);
 }

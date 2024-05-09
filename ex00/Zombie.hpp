@@ -6,7 +6,7 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 11:48:52 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/09 12:07:19 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/09 14:50:12 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Zombie
 		~Zombie();
 		void announce(void);
 	private:
-		std::string name;
+		std::string _name;
 };
 
 void	randomChump(std::string name);

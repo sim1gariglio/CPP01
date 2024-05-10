@@ -1,6 +1,6 @@
 NAME = Zombie
 
-CC = g++
+CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp

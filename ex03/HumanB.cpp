@@ -6,42 +6,39 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 12:21:59 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/10 12:40:34 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/13 12:21:07 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string name) : _Weapon("default"), _Name(name)
+HumanB::HumanB(std::string name) : _Weapon(NULL), _Name(name)
 {
-	std::cout << getName() << " created" << std::endl;
 }
 
 HumanB::~HumanB()
 {
-	std::cout << getName() << " destroyed" << std::endl;
 }
 
 std::string HumanB::getName(void) const
 {
-	return (_Name);
+	return (this->_Name);
 }
 
-void HumanB::setName(const std::string name)
+Weapon &HumanB::getWeapon(void) const
 {
-	this->_Name = name;
-}
-void HumanB::setWeapon(Weapon weapon)
-{
-	this->_Weapon = weapon;
+	return (*this->_Weapon);
 }
 
-std::string HumanB::getWeapon(void) const
+void HumanB::setWeapon(Weapon &weapon)
 {
-	return (_Weapon.getType());
+	this->_Weapon = &weapon;
 }
 
 void HumanB::attack()
 {
-	std::cout << getName() << " attacks with his " << _Weapon.getType() << std::endl;
+	if (this->_Weapon == NULL)
+		std::cout << this->getName() << " has no weapon" << std::endl;
+	else
+		std::cout << this->getName() << " attacks with his " << this->getWeapon().getType() << std::endl;
 }

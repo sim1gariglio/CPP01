@@ -6,7 +6,7 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 16:47:21 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/15 17:03:49 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/16 10:09:17 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void Harl::complain( std::string level )
 		case 3:
 			(this->*funct[3])();
 		default:
-			break;
+			break;			
 	}
 }
 

@@ -6,7 +6,7 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 11:48:52 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/10 12:28:15 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/17 11:13:02 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Zombie
 	public:
 		Zombie();
 		~Zombie();
-		std::string getName(void) const;w
+		std::string getName(void) const;
 		void setName(const std::string& name);
 		void announce(void);
 	private:

@@ -6,13 +6,13 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 11:48:56 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/09 15:29:05 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/17 11:14:50 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie() : _name("")
+Zombie::Zombie()
 {
 	std::cout << "Generic Zombie is born" << std::endl;
 }
@@ -27,7 +27,7 @@ void	Zombie::announce(void)
 	std::cout << this->getName() << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-std::string	Zombie::getName(void)
+std::string	Zombie::getName(void) const
 {
 	return (this->_name);
 }

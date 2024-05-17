@@ -6,7 +6,7 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 16:45:53 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/15 16:36:17 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/17 11:26:40 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int main(void)
 	harl.complain("WARNING");
 	std::cout << "-------" <<std::endl;
 	harl.complain("ERROR");
+	std::cout << "-------" <<std::endl;
+	harl.complain("ERRO");
 	std::cout << "-------" <<std::endl;
 	return 0;
 }

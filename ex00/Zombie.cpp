@@ -6,7 +6,7 @@
 /*   By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/09 11:48:56 by sgarigli          #+#    #+#             */
-/*   Updated: 2024/05/09 15:12:14 by sgarigli         ###   ########.fr       */
+/*   Updated: 2024/05/17 11:11:35 by sgarigli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	Zombie::announce(void)
 	std::cout << this->getName() << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-std::string	Zombie::getName(void)
+std::string	Zombie::getName(void) const
 {
 	return (this->_name);
 }
